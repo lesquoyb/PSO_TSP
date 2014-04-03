@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="tsm.Ville" x="510" y="624">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="tsm.Graphique" x="139" y="99">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="tsm.Essaim" endpointName="e" kind="Simple"/>
+        <Communication destinationClassName="tsm.Ville"/>
+        <Communication destinationClassName="tsm.Particule"/>
+        <Communication destinationClassName="tsm.Carte"/>
+        <Communication destinationClassName="tsm.Essaim"/>
+    </Class>
+    <Class name="tsm.Particule" x="491" y="413">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="tsm.Carte"
+            endpointName="carte" kind="Simple"/>
+        <Association destinationClassName="tsm.Ville"
+            endpointName="mData[]" kind="Simple"/>
+        <Communication destinationClassName="tsm.Carte"/>
+    </Class>
+    <Class name="tsm.Fichier" x="250" y="28">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="tsm.Carte"/>
+    </Class>
+    <Class name="tsm.Panneau.ComboBoxListener" x="711" y="245">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="tsm.Graphique"/>
+        <Communication destinationClassName="tsm.Fichier"/>
+        <Communication destinationClassName="tsm.Essaim"/>
+    </Class>
+    <Class name="tsm.Essaim" x="164" y="419">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="tsm.Ville"
+            endpointName="meilleur_trouve" kind="Simple">
+            <Point x="426" y="549"/>
+        </Association>
+        <Association destinationClassName="tsm.Particule"
+            endpointName="particules" kind="Simple"/>
+        <Association destinationClassName="tsm.Carte"
+            endpointName="carte" kind="Simple"/>
+        <Communication destinationClassName="tsm.Particule"/>
+        <Communication destinationClassName="tsm.Carte"/>
+    </Class>
+    <Class name="tsm.Carte" x="121" y="624">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="tsm.Ville"
+            endpointName="liste_villes" kind="Simple">
+            <Point x="444" y="713"/>
+        </Association>
+        <Association destinationClassName="tsm.Ville"
+            endpointName="meilleur_chemin" kind="Simple">
+            <Point x="453" y="627"/>
+        </Association>
+    </Class>
+    <Class name="tsm.Panneau.BoutonListener" x="706" y="158">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="tsm.Graphique"/>
+        <Communication destinationClassName="tsm.Fichier"/>
+        <Communication destinationClassName="tsm.Essaim"/>
+    </Class>
+    <Class name="tsm.Panneau" x="494" y="118">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="tsm.Graphique"
+            endpointName="graphique" kind="Simple"/>
+        <Communication destinationClassName="tsm.Graphique"/>
+        <Communication destinationClassName="tsm.Fichier"/>
+        <Communication destinationClassName="tsm.Essaim"/>
+    </Class>
+    <Class name="tsm.Fenetre" x="566" y="36">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="tsm.Panneau"
+            endpointName="pan" kind="Simple"/>
+    </Class>
+    <Class name="tsm.main" x="418" y="2">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="tsm.Fenetre" endpointName="f" kind="Simple"/>
+        <Communication destinationClassName="tsm.Fichier"/>
+    </Class>
+</ClassDiagram>

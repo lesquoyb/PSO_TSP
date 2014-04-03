@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="tsm.Ville" x="768" y="97"/>
+    <CommunicationClass name="tsm.Graphique" x="465" y="51">
+        <Association destinationClassName="tsm.Essaim" endpointName="e" kind="Simple"/>
+        <Communication destinationClassName="tsm.Ville"/>
+        <Communication destinationClassName="tsm.Particule"/>
+        <Communication destinationClassName="tsm.Carte"/>
+        <Communication destinationClassName="tsm.Essaim">
+            <Point x="165" y="145"/>
+        </Communication>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.Particule" x="77" y="347">
+        <Association destinationClassName="tsm.Carte"
+            endpointName="carte" kind="Simple"/>
+        <Association destinationClassName="tsm.Ville"
+            endpointName="mData[]" kind="Simple"/>
+        <Communication destinationClassName="tsm.Carte"/>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.Fichier" x="854" y="319">
+        <Communication destinationClassName="tsm.Carte"/>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.Panneau.ComboBoxListener" x="650" y="602">
+        <Communication destinationClassName="tsm.Graphique">
+            <Point x="592" y="336"/>
+        </Communication>
+        <Communication destinationClassName="tsm.Fichier"/>
+        <Communication destinationClassName="tsm.Essaim">
+            <Point x="157" y="221"/>
+        </Communication>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.Essaim" x="138" y="161">
+        <Association destinationClassName="tsm.Particule"
+            endpointName="particules" kind="Simple"/>
+        <Association destinationClassName="tsm.Carte"
+            endpointName="carte" kind="Simple"/>
+        <Communication destinationClassName="tsm.Particule">
+            <Point x="54" y="346"/>
+        </Communication>
+        <Communication destinationClassName="tsm.Carte"/>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.Carte" x="410" y="294">
+        <Association destinationClassName="tsm.Ville"
+            endpointName="liste_villes" kind="Simple"/>
+        <Association destinationClassName="tsm.Ville"
+            endpointName="meilleur_chemin" kind="Simple"/>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.Panneau.BoutonListener" x="996" y="170">
+        <Communication destinationClassName="tsm.Graphique">
+            <Point x="850" y="12"/>
+            <Point x="653" y="4"/>
+        </Communication>
+        <Communication destinationClassName="tsm.Fichier"/>
+        <Communication destinationClassName="tsm.Essaim">
+            <Point x="225" y="171"/>
+        </Communication>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.Panneau" x="26" y="27">
+        <Association destinationClassName="tsm.Graphique"
+            endpointName="graphique" kind="Simple"/>
+        <Communication destinationClassName="tsm.Graphique">
+            <Point x="230" y="-4"/>
+            <Point x="322" y="0"/>
+            <Point x="395" y="19"/>
+        </Communication>
+        <Communication destinationClassName="tsm.Fichier"/>
+        <Communication destinationClassName="tsm.Essaim">
+            <Point x="42" y="152"/>
+        </Communication>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.Fenetre" x="230" y="456">
+        <Association destinationClassName="tsm.Panneau"
+            endpointName="pan" kind="Simple"/>
+    </CommunicationClass>
+    <CommunicationClass name="tsm.main" x="1112" y="322">
+        <Association destinationClassName="tsm.Fenetre" endpointName="f" kind="Simple"/>
+        <Communication destinationClassName="tsm.Fichier"/>
+    </CommunicationClass>
+</ClassDiagram>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Liste_carte>
+  <carte nom="France">
+    <ville nom="Metz" x="0.0" y="0.0" />
+    <ville nom="Strasbourg" x="1.0" y="0.0" />
+    <ville nom="Verdun" x="0.0" y="1.0" />
+    <ville nom="Reims" x="1.0" y="1.0" />
+    <Meilleur_Chemin>
+      <ville nom="Metz" x="0.0" y="0.0" />
+      <ville nom="Strasbourg" x="1.0" y="0.0" />
+      <ville nom="Reims" x="1.0" y="1.0" />
+      <ville nom="Verdun" x="0.0" y="1.0" />
+      <ville nom="Metz" x="0.0" y="0.0" />
+    </Meilleur_Chemin>
+  </carte>
+  <carte nom="Espagne">
+    <ville nom="Madrid" x="0.0" y="0.0" />
+    <ville nom="Barcelone" x="1.0" y="0.0" />
+    <ville nom="Grenade" x="0.0" y="1.0" />
+    <ville nom="Salamanca" x="1.0" y="1.0" />
+    <ville nom="Valencia" x="2.0" y="0.5" />
+    <Meilleur_Chemin>
+      <ville nom="Madrid" x="0.0" y="0.0" />
+      <ville nom="Barcelone" x="1.0" y="0.0" />
+      <ville nom="Valencia" x="2.0" y="0.5" />
+      <ville nom="Salamanca" x="1.0" y="1.0" />
+      <ville nom="Grenade" x="0.0" y="1.0" />
+      <ville nom="Madrid" x="0.0" y="0.0" />
+    </Meilleur_Chemin>
+  </carte>
+  <carte nom="Portugal">
+    <ville nom="Porto" x="0.0" y="0.0" />
+    <ville nom="Lisbonne" x="0.0" y="1.0" />
+    <ville nom="Guarda" x="1.5" y="2.0" />
+    <ville nom="Peniche" x="1.0" y="0.0" />
+    <Meilleur_Chemin>
+      <ville nom="Porto" x="0.0" y="0.0" />
+      <ville nom="Lisbonne" x="0.0" y="1.0" />
+      <ville nom="Guarda" x="1.5" y="2.0" />
+      <ville nom="Peniche" x="1.0" y="0.0" />
+      <ville nom="Porto" x="0.0" y="0.0" />
+    </Meilleur_Chemin>
+  </carte>
+  <carte nom="Angleterre">
+    <ville nom="Londres" x="-1.0" y="-1.0" />
+    <ville nom="Norwich" x="-1.0" y="1.0" />
+    <ville nom="Oxford" x="2.0" y="1.0" />
+    <ville nom="Cambridge" x="2.0" y="-1.0" />
+    <Meilleur_Chemin>
+      <ville nom="Londres" x="-1.0" y="-1.0" />
+      <ville nom="Norwich" x="-1.0" y="1.0" />
+      <ville nom="Oxford" x="2.0" y="1.0" />
+      <ville nom="Cambridge" x="2.0" y="-1.0" />
+      <ville nom="Londres" x="-1.0" y="-1.0" />
+    </Meilleur_Chemin>
+  </carte>
+  <carte nom="Villes de France">
+    <ville nom="Paris" x="0.0" y="0.0" />
+    <ville nom="Marseille" x="200.0" y="-700.0" />
+    <ville nom="Lyon" x="170.0" y="-350.0" />
+    <ville nom="Toulouse" x="-65.0" y="-640.0" />
+    <ville nom="Nice" x="360.0" y="-580.0" />
+    <ville nom="Nantes" x="-280.0" y="-180.0" />
+    <ville nom="Strasbourg" x="400.0" y="-40.0" />
+    <ville nom="Lille" x="40.0" y="190.0" />
+    <ville nom="Montpellier" x="100.0" y="-650.0" />
+    <ville nom="Bordeaux" x="-210.0" y="-430.0" />
+    <ville nom="Rennes" x="-290.0" y="-85.0" />
+    <ville nom="Le Havre" x="-145.4" y="65.5" />
+    <ville nom="Reims" x="120.0" y="50.4" />
+    <ville nom="Saint-Etienne" x="140.0" y="-370.0" />
+    <ville nom="Toulon" x="240.0" y="-715.0" />
+    <Meilleur_Chemin>
+      <ville nom="Paris" x="0.0" y="0.0" />
+      <ville nom="Le Havre" x="-145.4" y="65.5" />
+      <ville nom="Nantes" x="-280.0" y="-180.0" />
+      <ville nom="Rennes" x="-290.0" y="-85.0" />
+      <ville nom="Bordeaux" x="-210.0" y="-430.0" />
+      <ville nom="Toulouse" x="-65.0" y="-640.0" />
+      <ville nom="Marseille" x="200.0" y="-700.0" />
+      <ville nom="Montpelliers" x="100.0" y="-650.0" />
+      <ville nom="Toulon" x="240.0" y="-715.0" />
+      <ville nom="Nice" x="360.0" y="-580.0" />
+      <ville nom="Saint-Etienne" x="140.0" y="-370.0" />
+      <ville nom="Lyon" x="170.0" y="-350.0" />
+      <ville nom="Strasbourg" x="400.0" y="-40.0" />
+      <ville nom="Lille" x="40.0" y="190.0" />
+      <ville nom="Reims" x="120.0" y="50.4" />
+      <ville nom="Paris" x="0.0" y="0.0" />
+    </Meilleur_Chemin>
+  </carte>
+</Liste_carte>
+
